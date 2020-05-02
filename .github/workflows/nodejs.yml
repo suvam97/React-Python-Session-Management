@@ -18,9 +18,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install Packages
-      run: npm install
-    - name: Test to NPM packages
-      run: npm test
+    - npm install
+      env:
+        CI: true
+
+    - npm test
+      env:
+        CI: true
     - name: Updating Domain
       run: echo "Update domain"
