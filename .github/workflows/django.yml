@@ -23,8 +23,9 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
+        cd /home/runner/work/React-Python-Session-Management/React-Python-Session-Management/Backend
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install
     - name: Run Tests
       run: |
         python manage.py test
