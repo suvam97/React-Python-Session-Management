@@ -1,4 +1,6 @@
-from Backend.core.serializers import UserSerializer
+
+from Backend.mysite.core.serializers import UserSerializer
+
 
 def my_jwt_response_handler(token, user=None, request=None):
     return {

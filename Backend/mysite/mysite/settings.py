@@ -138,6 +138,9 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
 ]
 
+#from  Backend.mysite.mysite.utils import my_jwt_response_handler
+
+
 JWT_AUTH = {
-    'JWT_RESPONSE_PAYLOAD_HANDLER': 'mysite.utils.my_jwt_response_handler'
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'Backend.mysite.mysite.utils.my_jwt_response_handler'
 }
